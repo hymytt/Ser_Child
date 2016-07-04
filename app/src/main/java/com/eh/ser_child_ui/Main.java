@@ -20,14 +20,7 @@ import com.lidroid.xutils.view.annotation.ViewInject;
 public class Main  extends  BaseActivity implements RadioGroup.OnCheckedChangeListener {
     @ViewInject(R.id.btn_0)
     RadioButton rb_main;
-//    @ViewInject(R.id.btn_1)
-//    RadioButton rb_1;
-//    @ViewInject(R.id.btn_2)
-//    RadioButton rb_2;
-//    @ViewInject(R.id.btn_3)
-//    RadioButton rb_3;
-//    @ViewInject(R.id.btn_4)
-//    RadioButton rb_4;
+
     @ViewInject(R.id.RadioGroup1)
     RadioGroup group;
     @ViewInject(R.id.framlayout_1)
