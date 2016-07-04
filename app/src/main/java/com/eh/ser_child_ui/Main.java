@@ -70,7 +70,7 @@ public class Main  extends  BaseActivity implements RadioGroup.OnCheckedChangeLi
         switch (checkedId) {
             case R.id.btn_0:
                 changeFragment(new IndexFragment(), true);
-                System.out.print("你好");
+
                 break;
            case R.id.btn_1:
                 changeFragment(new CalendarFragment(), true);
