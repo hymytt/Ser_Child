@@ -1,6 +1,5 @@
 package com.eh.ser_child_ui;
 
-
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -8,8 +7,9 @@ import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import com.eh.ser_child_fragment.IndexFragment;
 import com.eh.ser_child_fragment.CalendarFragment;
+import com.eh.ser_child_fragment.IndexFragment;
+import com.eh.ser_child_fragment.MineFragment;
 import com.eh.ser_child_fragment.RemindFragment;
 import com.eh.ser_child_fragment.TopicFragment;
 import com.lidroid.xutils.view.annotation.ViewInject;
@@ -70,8 +70,9 @@ public class Main  extends  BaseActivity implements RadioGroup.OnCheckedChangeLi
         switch (checkedId) {
             case R.id.btn_0:
                 changeFragment(new IndexFragment(), true);
+                System.out.print("你好");
                 break;
-            case R.id.btn_1:
+           case R.id.btn_1:
                 changeFragment(new CalendarFragment(), true);
                 break;
             case R.id.btn_2:
@@ -79,6 +80,9 @@ public class Main  extends  BaseActivity implements RadioGroup.OnCheckedChangeLi
                 break;
             case R.id.btn_3:
                 changeFragment(new TopicFragment(), true);
+                break;
+            case R.id.btn_4:
+                changeFragment(new MineFragment(), true);
                 break;
         }
 
