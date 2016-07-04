@@ -1,6 +1,8 @@
 package com.eh.ser_child_ui;
 
 import android.app.Dialog;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Window;
@@ -121,4 +123,16 @@ public abstract class BaseActivity extends FragmentActivity implements DialogMak
 		ActivityStack.getInstance().removeActivity(this);
 		super.onDestroy();
 	}
+
+	/**
+	 * 跳转
+	 * @param packageContext
+	 * @param cls
+     */
+	protected void intoActivity(Context packageContext,Class cls){
+		Intent into=new Intent(packageContext,cls);
+		startActivity(into);
+	}
+
+
 }
